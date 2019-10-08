@@ -1,4 +1,4 @@
-# scrapy-dark-sky-api
+# scrapy-darksky-api
 
 ## Envrionment
 
