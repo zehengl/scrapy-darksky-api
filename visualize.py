@@ -27,27 +27,26 @@ for p in ax.patches:
         f"{height/ df.shape[0] * 100:.2f}%",
         ha="center",
     )
-ax.get_figure().savefig(result / "icon-countplot.png")
+ax.get_figure().savefig(result / "icon-countplot.png", bbox_inches="tight")
 
 
 #%%
 plt.clf()
-ax = sns.scatterplot(x="time", y="temperature", s=2, data=df)
+ax = sns.scatterplot(x="time", y="temperature", s=4, data=df)
 ax.set(xlim=(min(df["time"]), max(df["time"])))
-print(ax.get_xticklabels())
 ax.get_figure().savefig(result / "temperature-scatterplot.png")
 
 
 #%%
 plt.clf()
-ax = sns.scatterplot(x="time", y="pressure", s=2, data=df)
+ax = sns.scatterplot(x="time", y="pressure", s=4, data=df)
 ax.set(xlim=(min(df["time"]), max(df["time"])))
 ax.get_figure().savefig(result / "pressure-scatterplot.png")
+
 
 #%%
 plt.clf()
 ax = sns.jointplot(x="temperature", y="pressure", kind="hex", data=df)
-
 ax.fig.savefig(result / "temperature-pressure-jointplot.png")
 
 
@@ -55,7 +54,7 @@ ax.fig.savefig(result / "temperature-pressure-jointplot.png")
 plt.clf()
 ax = sns.pairplot(
     vars=["wind_speed", "wind_gust", "humidity", "pressure", "temperature"],
-    plot_kws={"s": 2},
+    plot_kws={"s": 4},
     data=df,
 )
 ax.fig.savefig(result / "pairplot.png")
