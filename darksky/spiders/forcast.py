@@ -11,12 +11,17 @@ from darksky.items import DarkskyItem
 key = os.getenv("darksky_secret_key", None)
 lat = os.getenv("darksky_latitude", None)
 long = os.getenv("darksky_longitude", None)
-year = int(os.getenv("darksky_year", None))
+year = os.getenv("darksky_year", None)
+hour = os.getenv("darksky_hour", None)
 
 assert key, "[darksy] secret key not set"
 assert lat, "[darksky] latitude not set"
 assert long, "[darksky] longitude not set"
 assert year, "[darksky] year not set"
+assert hour, "[darksky] hour not set"
+
+year = int(year)
+hour = int(hour)
 
 
 class ForcastSpider(scrapy.Spider):
@@ -25,7 +30,7 @@ class ForcastSpider(scrapy.Spider):
     allowed_domains = [f"https://api.darksky.net/forecast/{key}"]
     days = 366 if isleap(year) else 365
     timestamps = [
-        int((datetime(year, 1, 1, 6) + timedelta(days=d)).timestamp())
+        int((datetime(year, 1, 1, hour) + timedelta(days=d)).timestamp())
         for d in range(days)
     ]
 
