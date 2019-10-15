@@ -1,0 +1,47 @@
+{% extends "bootstrap/base.html" %} {% block head %}
+{{ super() }}
+<link
+  rel="shortcut icon"
+  href="{{ url_for('static', filename='favicon.png') }}"
+/>
+{% endblock %} {% block title %} scrapy-darksky-api {% endblock %} {% block
+content %}
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">
+      <span>
+        <img
+          src="{{ url_for('static', filename='favicon.png') }}"
+          width="64"
+          height="64"
+        />
+      </span>
+      scrapy-darksky-api
+    </h1>
+    <p class="lead">
+      A Python application to demonstrate some weather data crawled by
+      scrapy-darksky-api
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  {% include 'year_select.html' %}
+</div>
+
+<div class="container">
+  {% include 'plot.html' %}
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">
+      &copy; Copyright 2019 by Zeheng Li <br />
+      Icon made by
+      <a href="https://www.iconfinder.com/bluewolfski">
+        The Pictographers
+      </a>
+    </span>
+  </div>
+</footer>
+{% endblock %}

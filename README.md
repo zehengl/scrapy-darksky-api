@@ -58,3 +58,7 @@ export darksky_year="2013"
 export darksky_hour="6"
 scrapy crawl forcast -o forcast_$darksky_year\_$darksky_hour.json
 ```
+
+## Credits
+
+- [Icon](https://www.iconfinder.com/icons/667368/celcius_clouds_farenheit_sunshine_temerature_thermometer_weather_icon) by [The Pictographers](https://www.iconfinder.com/bluewolfski)
