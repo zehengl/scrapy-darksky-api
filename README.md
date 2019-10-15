@@ -59,6 +59,10 @@ export darksky_hour="6"
 scrapy crawl forcast -o forcast_$darksky_year\_$darksky_hour.json
 ```
 
+## Demo
+
+See the demo app at [https://scrapy-darksky-api.herokuapp.com/](https://scrapy-darksky-api.herokuapp.com/) for some crawled weather data
+
 ## Credits
 
 - [Icon](https://www.iconfinder.com/icons/667368/celcius_clouds_farenheit_sunshine_temerature_thermometer_weather_icon) by [The Pictographers](https://www.iconfinder.com/bluewolfski)
