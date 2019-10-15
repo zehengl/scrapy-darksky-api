@@ -10,6 +10,6 @@ choices = [(p, p) for p in forcast]
 
 class YearSelectForm(FlaskForm):
     year = SelectMultipleField(
-        "Available Data (mutilple select)", choices=choices, validators=[DataRequired()]
+        "Available Data (multiple select)", choices=choices, validators=[DataRequired()]
     )
     submit = SubmitField("Make Plot")
