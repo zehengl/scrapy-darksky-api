@@ -41,7 +41,7 @@ $Env:darksky_latitude="51.05011"
 $Env:darksky_longitude="-114.08529"
 $Env:darksky_year="2013"
 $Env:darksky_hour="6"
-scrapy crawl forcast -o forcast_$Env:darksky_year`_$Env:darksky_hour.json
+scrapy crawl forcast -o data\forcast_$Env:darksky_year`_$Env:darksky_hour.json
 ```
 
 ### Linux
@@ -56,7 +56,7 @@ export darksky_latitude="51.05011"
 export darksky_longitude="-114.08529"
 export darksky_year="2013"
 export darksky_hour="6"
-scrapy crawl forcast -o forcast_$darksky_year\_$darksky_hour.json
+scrapy crawl forcast -o data/forcast_$darksky_year\_$darksky_hour.json
 ```
 
 ## Demo
