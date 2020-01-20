@@ -38,7 +38,7 @@ Keep in mind that [Dark Sky Api](https://darksky.net/dev) only allows 1000 reque
 python -m venv venv
 .\venv\Scripts\activate
 python -m pip install -U pip setuptools
-pip install -r requirements.txt
+pip install -r requirements-scrapy.txt
 $Env:darksky_secret_key="xxx"
 $Env:darksky_latitude="51.05011"
 $Env:darksky_longitude="-114.08529"
@@ -53,7 +53,7 @@ scrapy crawl forcast -o data\forcast_$Env:darksky_year`_$Env:darksky_hour.json
 python -m venv venv
 source venv/bin/activate
 python -m pip install -U pip setuptools
-pip install -r requirements.txt
+pip install -r requirements-scrapy.txt
 export darksky_secret_key="xxx"
 export darksky_latitude="51.05011"
 export darksky_longitude="-114.08529"

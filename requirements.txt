@@ -4,6 +4,4 @@ Flask-WTF==0.14.2
 gunicorn==19.9.0
 pandas==0.25.1
 plotly==4.1.1
-Scrapy==1.7.3
-seaborn==0.9.0
 whitenoise==4.1.4
