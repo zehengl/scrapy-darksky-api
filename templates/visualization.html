@@ -1,0 +1,86 @@
+<button
+  type="button"
+  class="btn btn-info"
+  data-toggle="modal"
+  data-target="#exploratoryDataAnalysisModal"
+>
+  Show exploratory data analysis
+</button>
+
+<div
+  class="modal fade"
+  id="exploratoryDataAnalysisModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exploratoryDataAnalysisModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exploratoryDataAnalysisModalLabel">
+          Exploratory Data Analysis
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-cloud_cover-temperature.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-dew_point-temperature.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-humidity-temperature.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-precip_acccumulation-temperature.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-precip_intensity-temperature.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-precip_probability-temperature.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-pressure-temperature.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-temperature-visibility.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-temperature-wind_bearing.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-temperature-wind_gust.png') }}"
+        />
+        <img
+          class="img-fluid"
+          src="{{ url_for('static', filename='jointplot-temperature-wind_speed.png') }}"
+        />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

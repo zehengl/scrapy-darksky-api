@@ -7,11 +7,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-path = Path(".")
+data = Path("data")
 result = Path("result")
+static = Path("static")
 result.mkdir(exist_ok=True)
 
-df = pd.concat(map(pd.read_json, path.glob("forcast_*.json")), ignore_index=True)
+df = pd.concat(map(pd.read_json, data.glob("forcast_*.json")), ignore_index=True)
 
 df["time"] = df.apply(lambda r: datetime.fromtimestamp(r["time"]), axis=1)
 df["precip_type"] = df.apply(lambda r: r["precip_type"] or "none", axis=1)
@@ -68,6 +69,8 @@ for x, y in combinations(num_attrs, 2):
     plt.clf()
     ax = sns.jointplot(x=x, y=y, kind="hex", data=df)
     ax.fig.savefig(result / f"jointplot-{x}-{y}.png")
+    if "temperature" in [x, y]:
+        ax.fig.savefig(static / f"jointplot-{x}-{y}.png")
 
 
 #%%
