@@ -63,8 +63,8 @@ train = train[-size:]
 
 train_index = sorted(train.index[-size:])
 test_index = sorted(test.index)
-fig = plt.figure()
-plt.plot(train_index, train, color="black", label="Latest Training data")
+fig = plt.figure(figsize=(12, 9), dpi=80)
+plt.plot(train_index, train, color="black", label="Latest Training Data")
 plt.plot(test_index, test, color="blue", label="Actual Observation")
 plt.plot(test_index, predictions, color="green", label="Predicted Value")
 plt.title(f"Last year: MAE={mean_squared_error(test, predictions):.2f}")
