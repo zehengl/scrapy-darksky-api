@@ -2,4 +2,5 @@
 <form class="form form-horizontal" method="post" role="form">
   {{ wtf.form_field(form.year, class="form-control", size=10) }}
   {{ wtf.form_field(form.submit, class="btn btn-primary") }}
+  {% include 'time_series_analysis.html' %}
 </form>
