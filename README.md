@@ -5,7 +5,7 @@
 
 A scrapy app to crawl weather data from Dark Sky Api
 
-## Envrionment
+## Environment
 
 - Python 3.6
 
@@ -21,7 +21,7 @@ It will install `pylint` and `black` to enable linting and auto-formatting.
 
 ## Usage
 
-1. set envrionment variables for darksky secret key, latitude, longitude, year, and hour for crawling
+1. set environment variables for darksky secret key, latitude, longitude, year, and hour for crawling
 2. run scrapy to crawl the forcast data and save in json
 
 This scrapy app would crawl the temperatures in all days witin {year} at {hour} o'clock.
