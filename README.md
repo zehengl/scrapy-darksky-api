@@ -24,9 +24,9 @@ It will install `pylint` and `black` to enable linting and auto-formatting.
 1. set environment variables for darksky secret key, latitude, longitude, year, and hour for crawling
 2. run scrapy to crawl the forecast data and save in json
 
-This scrapy app would crawl the temperatures in all days witin {year} at {hour} o'clock.
+This scrapy app would crawl the temperatures in all days within {year} at {hour} o'clock.
 
-Keep in mind that [Dark Sky Api](https://darksky.net/dev) only allows 1000 requests for free tier.
+Keep in mind that [Dark Sky Api][1] only allows 1000 daily requests for free tier.
 
 ## Example
 
@@ -64,8 +64,13 @@ scrapy crawl forecast -o data/forecast_$darksky_year\_$darksky_hour.json
 
 ## Demo
 
-See the demo app at [https://scrapy-darksky-api.herokuapp.com/](https://scrapy-darksky-api.herokuapp.com/) for some crawled weather data
+See the demo app at [https://scrapy-darksky-api.herokuapp.com/][2] for some crawled weather data
 
 ## Credits
 
-- [Icon](https://www.iconfinder.com/icons/667368/celcius_clouds_farenheit_sunshine_temerature_thermometer_weather_icon) by [The Pictographers](https://www.iconfinder.com/bluewolfski)
+- [Icon][3] by [The Pictographers][4]
+
+[1]: https://darksky.net/dev
+[2]: https://scrapy-darksky-api.herokuapp.com/
+[3]: https://www.iconfinder.com/icons/667368/celcius_clouds_farenheit_sunshine_temerature_thermometer_weather_icon
+[4]: https://www.iconfinder.com/bluewolfski
