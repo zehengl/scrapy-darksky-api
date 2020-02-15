@@ -4,8 +4,8 @@ from wtforms import SelectMultipleField, SubmitField
 from wtforms.validators import DataRequired
 
 path = Path(".")
-forcast = sorted(path.glob("data/forcast_*.json"), reverse=True)
-choices = [(p, p) for p in forcast]
+forecast = sorted(path.glob("data/forecast_*.json"), reverse=True)
+choices = [(p, p) for p in forecast]
 
 
 class YearSelectForm(FlaskForm):

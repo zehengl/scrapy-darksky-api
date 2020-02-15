@@ -22,7 +22,7 @@ It will install `pylint` and `black` to enable linting and auto-formatting.
 ## Usage
 
 1. set environment variables for darksky secret key, latitude, longitude, year, and hour for crawling
-2. run scrapy to crawl the forcast data and save in json
+2. run scrapy to crawl the forecast data and save in json
 
 This scrapy app would crawl the temperatures in all days witin {year} at {hour} o'clock.
 
@@ -44,7 +44,7 @@ $Env:darksky_latitude="51.05011"
 $Env:darksky_longitude="-114.08529"
 $Env:darksky_year="2013"
 $Env:darksky_hour="6"
-scrapy crawl forcast -o data\forcast_$Env:darksky_year`_$Env:darksky_hour.json
+scrapy crawl forecast -o data\forecast_$Env:darksky_year`_$Env:darksky_hour.json
 ```
 
 ### Linux
@@ -59,7 +59,7 @@ export darksky_latitude="51.05011"
 export darksky_longitude="-114.08529"
 export darksky_year="2013"
 export darksky_hour="6"
-scrapy crawl forcast -o data/forcast_$darksky_year\_$darksky_hour.json
+scrapy crawl forecast -o data/forecast_$darksky_year\_$darksky_hour.json
 ```
 
 ## Demo

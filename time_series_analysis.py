@@ -11,7 +11,7 @@ from sklearn.metrics import mean_squared_error
 from tqdm import tqdm
 
 df = pd.concat(
-    map(pd.read_json, Path("data").glob("forcast_*.json")), ignore_index=True
+    map(pd.read_json, Path("data").glob("forecast_*.json")), ignore_index=True
 )
 df["time"] = df.apply(lambda r: datetime.fromtimestamp(r["time"]), axis=1)
 df = df.sort_values(by=["time"])
