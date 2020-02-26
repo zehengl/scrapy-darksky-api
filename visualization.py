@@ -36,7 +36,6 @@ num_attrs = [
 
 #%%
 for x in cat_attrs:
-    plt.clf()
     ax = sns.countplot(x=x, data=df)
     ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
     for p in ax.patches:
@@ -48,11 +47,12 @@ for x in cat_attrs:
             ha="center",
         )
     ax.get_figure().savefig(result / f"countplot-{x}.png", bbox_inches="tight")
+    plt.cla()
+    plt.close(ax.get_figure())
 
 
 #%%
 for y in num_attrs + cat_attrs:
-    plt.clf()
     ax = sns.scatterplot(x="time", y=y, s=4, data=df)
     ax.set(xlim=(min(df["time"]), max(df["time"])))
     num_ticks = len(ax.get_xticklabels())
@@ -62,18 +62,22 @@ for y in num_attrs + cat_attrs:
     ax.get_figure().savefig(
         result / f"scatterplot-{y}-over-time.png", bbox_inches="tight"
     )
+    plt.cla()
+    plt.close(ax.get_figure())
 
 
 #%%
 for x, y in combinations(num_attrs, 2):
-    plt.clf()
     ax = sns.jointplot(x=x, y=y, kind="hex", data=df)
     ax.fig.savefig(result / f"jointplot-{x}-{y}.png")
     if "temperature" in [x, y]:
         ax.fig.savefig(static / f"jointplot-{x}-{y}.png")
+    plt.cla()
+    plt.close(ax.fig)
 
 
 #%%
-plt.clf()
 ax = sns.pairplot(vars=num_attrs, plot_kws={"s": 4}, data=df)
 ax.fig.savefig(result / "pairplot.png")
+plt.cla()
+plt.close(ax.fig)
