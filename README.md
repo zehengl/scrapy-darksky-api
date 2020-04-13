@@ -5,6 +5,10 @@
 
 A scrapy app to crawl weather data from Dark Sky Api
 
+Note:
+
+Dark Sky has joined Apple and the API will not be available after end of 2021. See [source](https://blog.darksky.net/).
+
 ## Environment
 
 - Python 3.6
