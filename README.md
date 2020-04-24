@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-59-512.png" alt="logo" height="196">
+</div>
+
 # scrapy-darksky-api
 
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
@@ -70,9 +74,15 @@ scrapy crawl forecast -o data/forecast_$darksky_year\_$darksky_hour.json
 
 See the demo app at [https://scrapy-darksky-api.herokuapp.com/][2] for some crawled weather data
 
+<hr>
+
+<sup>
+
 ## Credits
 
 - [Icon][3] by [The Pictographers][4]
+
+</sup>
 
 [1]: https://darksky.net/dev
 [2]: https://scrapy-darksky-api.herokuapp.com/
