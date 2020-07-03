@@ -5,7 +5,6 @@
 # scrapy-darksky-api
 
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
-[![time tracker](https://wakatime.com/badge/github/zehengl/scrapy-darksky-api.svg)](https://wakatime.com/badge/github/zehengl/scrapy-darksky-api)
 
 A scrapy app to crawl weather data from Dark Sky Api
 
