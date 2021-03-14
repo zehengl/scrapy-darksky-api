@@ -2,3 +2,4 @@
 pylint==2.6.1
 black==19.3b0
 jupyter==1.0.0
+notebook>=6.1.5 # not directly required, pinned by Snyk to avoid a vulnerability
