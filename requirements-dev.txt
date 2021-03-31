@@ -1,4 +1,4 @@
 -r requirements.txt
-pylint==2.6.1
+pylint==2.7.0
 black==19.3b0
 jupyter==1.0.0
