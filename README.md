@@ -14,7 +14,7 @@ Dark Sky has joined Apple and the API will not be available after end of 2021. S
 
 ## Environment
 
-- Python 3.6
+- Python 3.7
 
 ## Install
 
