@@ -8,9 +8,7 @@
 
 A scrapy app to crawl weather data from Dark Sky Api
 
-Note:
-
-Dark Sky has joined Apple and the API will not be available after end of 2021. See [source](https://blog.darksky.net/).
+> Note: Dark Sky has joined Apple and the API will not be available after end of 2022. See [source](https://blog.darksky.net/).
 
 ## Environment
 
@@ -73,15 +71,9 @@ scrapy crawl forecast -O data/forecast_$darksky_year\_$darksky_hour.json
 
 See the demo app at [https://scrapy-darksky-api.herokuapp.com/][2] for some crawled weather data
 
-<hr>
-
-<sup>
-
 ## Credits
 
 - [Icon][3] by [The Pictographers][4]
-
-</sup>
 
 [1]: https://darksky.net/dev
 [2]: https://scrapy-darksky-api.herokuapp.com/
