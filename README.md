@@ -18,7 +18,7 @@ A scrapy app to crawl weather data from Dark Sky Api
 
 1. create virtualenv
 2. activate virtualenv
-3. update pip and setuptools
+3. update pip
 4. install deps
 
 Use `pip install -r requirements-dev.txt` for development.
@@ -42,8 +42,8 @@ Keep in mind that [Dark Sky Api][1] only allows 1000 daily requests for free tie
 ```powershell
 python -m venv venv
 .\venv\Scripts\activate
-python -m pip install -U pip setuptools
-pip install -r requirements-scrapy.txt
+python -m pip install -U pip
+pip install -r requirements-dev.txt
 $Env:darksky_secret_key="xxx"
 $Env:darksky_latitude="51.05011"
 $Env:darksky_longitude="-114.08529"
@@ -58,7 +58,7 @@ scrapy crawl forecast -O data\forecast_$Env:darksky_year`_$Env:darksky_hour.json
 python -m venv venv
 source venv/bin/activate
 python -m pip install -U pip setuptools
-pip install -r requirements-scrapy.txt
+pip install -r requirements-dev.txt
 export darksky_secret_key="xxx"
 export darksky_latitude="51.05011"
 export darksky_longitude="-114.08529"
