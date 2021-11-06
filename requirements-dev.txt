@@ -1,9 +1,9 @@
 -r requirements.txt
-black==21.9b0
-jupyterlab==3.2.1
+black==21.10b0
+jupyterlab==3.2.2
 matplotlib==3.4.3
 pip-check-updates==0.6.0
-pmdarima==1.8.3
+pmdarima==1.8.4
 pylint==2.11.1
 scikit-learn==1.0.1
 Scrapy==2.5.1
