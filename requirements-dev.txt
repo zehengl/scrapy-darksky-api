@@ -1,5 +1,5 @@
 -r requirements.txt
-black==21.11b0
+black==21.11b1
 jupyterlab==3.2.4
 pip-check-updates==0.6.1
 pmdarima==1.8.4
