@@ -57,7 +57,7 @@ scrapy crawl forecast -O data\forecast_$Env:darksky_year`_$Env:darksky_hour.json
 ```bash
 python -m venv venv
 source venv/bin/activate
-python -m pip install -U pip setuptools
+python -m pip install -U pip
 pip install -r requirements-dev.txt
 export darksky_secret_key="xxx"
 export darksky_latitude="51.05011"
@@ -69,7 +69,7 @@ scrapy crawl forecast -O data/forecast_$darksky_year\_$darksky_hour.json
 
 ## Demo
 
-See the demo app at [https://scrapy-darksky-api.herokuapp.com/][2] for some crawled weather data
+See the demo app at [https://scrapy-darksky-api.herokuapp.com/][2] for some visualization done on Calgary's weather data
 
 ## Credits
 
