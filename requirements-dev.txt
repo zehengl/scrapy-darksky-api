@@ -1,7 +1,7 @@
 -r requirements.txt
 black==21.12b0
 jupyterlab==3.2.8
-pip-check-updates==0.8.1
+pip-check-updates==0.8.2
 pmdarima==1.8.4
 pylint==2.12.2
 scikit-learn==1.0.2
