@@ -3,7 +3,7 @@ black==22.3.0
 jupyterlab==3.3.2
 pip-check-updates==0.11.0
 pmdarima==1.8.5
-pylint==2.13.3
+pylint==2.13.4
 scikit-learn==1.0.2
 Scrapy==2.6.1
 seaborn==0.11.2
