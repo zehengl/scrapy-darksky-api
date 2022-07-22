@@ -1,9 +1,9 @@
 -r requirements.txt
 black==22.6.0
-jupyterlab==3.4.3
+jupyterlab==3.4.4
 pip-check-updates==0.17.0
 pmdarima==1.8.5
-pylint==2.14.4
+pylint==2.14.5
 scikit-learn==1.1.1
 Scrapy==2.6.1
 seaborn==0.11.2
