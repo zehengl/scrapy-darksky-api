@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from pmdarima import auto_arima
 from pmdarima.arima import ndiffs
 from pmdarima.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_absolute_percentage_error
 from tqdm import tqdm
 
 df = pd.concat(
@@ -52,7 +52,7 @@ print(f"model order: {model.order}")
 # %%
 predictions = []
 for observation in tqdm(test):
-    prediction = model.predict(n_periods=1)[0]
+    prediction = model.predict(n_periods=1)
     predictions.append(prediction)
     model.update(observation)
 
@@ -67,7 +67,7 @@ fig = plt.figure(figsize=(12, 9), dpi=80)
 plt.plot(train_index, train, color="black", label="Latest Training Data")
 plt.plot(test_index, test, color="blue", label="Actual Observation")
 plt.plot(test_index, predictions, color="green", label="Predicted Value")
-plt.title(f"Last year: MSE={mean_squared_error(test, predictions):.2f}")
+plt.title(f"Last year: MAPE={mean_absolute_percentage_error(test, predictions):.2f}")
 plt.xticks([])
 plt.xlabel("Time")
 plt.ylabel("Temperature")
