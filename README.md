@@ -8,7 +8,7 @@
 
 A scrapy app to crawl weather data from Dark Sky Api
 
-> Note: Dark Sky has joined Apple and the API will not be available after end of 2022. See [source](https://blog.darksky.net/).
+> Note: Dark Sky has joined Apple and the API will not be available after end of March, 2023. See [source](https://blog.darksky.net/).
 
 ## Environment
 
@@ -40,8 +40,8 @@ Keep in mind that [Dark Sky Api][1] only allows 1000 daily requests for free tie
 ### Windows
 
 ```powershell
-python -m venv venv
-.\venv\Scripts\activate
+python -m venv .venv
+.\.venv\Scripts\activate
 python -m pip install -U pip
 pip install -r requirements-dev.txt
 $Env:darksky_secret_key="xxx"
@@ -55,8 +55,8 @@ scrapy crawl forecast -O data\forecast_$Env:darksky_year`_$Env:darksky_hour.json
 ### Linux
 
 ```bash
-python -m venv venv
-source venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -U pip
 pip install -r requirements-dev.txt
 export darksky_secret_key="xxx"
