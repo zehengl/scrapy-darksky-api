@@ -1,11 +1,11 @@
 -r requirements.txt
 -r requirements-flask.txt
 black==22.12.0
-jupyterlab==3.5.2
+jupyterlab==3.5.3
 pip-check-updates==0.18.1
 pmdarima==2.0.2
 pylint==2.15.10
-scikit-learn==1.2.0
+scikit-learn==1.2.1
 Scrapy==2.7.1
 seaborn==0.12.2
 tqdm==4.64.1
