@@ -69,13 +69,13 @@ scrapy crawl forecast -O data/forecast_$darksky_year\_$darksky_hour.json
 
 ## Demo
 
-See the demo app at [https://scrapy-darksky-api.herokuapp.com/][2] for some visualization done on Calgary's weather data
+See the demo app at [https://yyc-darksky-api.streamlit.app/][2] for some visualization done on Calgary's weather data
 
 ## Credits
 
 - [Icon][3] by [The Pictographers][4]
 
 [1]: https://darksky.net/dev
-[2]: https://scrapy-darksky-api.herokuapp.com/
+[2]: https://yyc-darksky-api.streamlit.app/
 [3]: https://www.iconfinder.com/icons/667368/celcius_clouds_farenheit_sunshine_temerature_thermometer_weather_icon
 [4]: https://www.iconfinder.com/bluewolfski
