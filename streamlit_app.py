@@ -5,7 +5,9 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-st.set_page_config(page_title="scrapy-darksky-api", page_icon="random")
+st.set_page_config(
+    page_title="scrapy-darksky-api", page_icon=":umbrella_with_rain_drops:"
+)
 _, center, _ = st.columns([2, 1, 2])
 with center:
     st.image(
