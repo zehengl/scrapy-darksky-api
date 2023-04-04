@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-59-512.png" alt="logo" height="196">
+    <img src="https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-59-512.png" alt="logo" height="128">
 </div>
 
 # scrapy-darksky-api
