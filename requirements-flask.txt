@@ -1,6 +1,6 @@
-Flask==2.3.3
+Flask==3.0.0
 Flask-Bootstrap4==4.0.2
-Flask-WTF==1.1.1
+Flask-WTF==1.2.1
 gunicorn==21.2.0
 pandas==2.1.1
 plotly==5.17.0
