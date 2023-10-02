@@ -4,8 +4,8 @@ black==23.9.1
 jupyterlab==4.0.6
 pip-check-updates==0.22.0
 pmdarima==2.0.3
-pylint==2.17.6
+pylint==2.17.7
 scikit-learn==1.3.1
 Scrapy==2.11.0
-seaborn==0.12.2
+seaborn==0.13.0
 tqdm==4.66.1
