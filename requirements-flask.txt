@@ -4,4 +4,4 @@ Flask-WTF==1.2.1
 gunicorn==21.2.0
 pandas==2.1.1
 plotly==5.17.0
-whitenoise==6.5.0
+whitenoise==6.6.0
