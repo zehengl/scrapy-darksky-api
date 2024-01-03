@@ -1,4 +1,4 @@
-#%%
+# %%
 from datetime import datetime
 from itertools import combinations
 from pathlib import Path
@@ -34,7 +34,7 @@ num_attrs = [
 ]
 
 
-#%%
+# %%
 for x in cat_attrs:
     ax = sns.countplot(x=x, data=df)
     ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
@@ -51,7 +51,7 @@ for x in cat_attrs:
     plt.close(ax.get_figure())
 
 
-#%%
+# %%
 for y in num_attrs + cat_attrs:
     ax = sns.scatterplot(x="time", y=y, s=4, data=df)
     ax.set(xlim=(min(df["time"]), max(df["time"])))
@@ -66,7 +66,7 @@ for y in num_attrs + cat_attrs:
     plt.close(ax.get_figure())
 
 
-#%%
+# %%
 for x, y in combinations(num_attrs, 2):
     ax = sns.jointplot(x=x, y=y, kind="hex", data=df)
     ax.fig.savefig(result / f"jointplot-{x}-{y}.png")
@@ -76,7 +76,7 @@ for x, y in combinations(num_attrs, 2):
     plt.close(ax.fig)
 
 
-#%%
+# %%
 ax = sns.pairplot(vars=num_attrs, plot_kws={"s": 4}, data=df)
 ax.fig.savefig(result / "pairplot.png")
 plt.cla()

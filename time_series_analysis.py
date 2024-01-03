@@ -1,9 +1,9 @@
-#%%
+# %%
 from datetime import datetime
 from pathlib import Path
 
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
 from pmdarima import auto_arima
 from pmdarima.arima import ndiffs
 from pmdarima.model_selection import train_test_split
@@ -57,7 +57,7 @@ for observation in tqdm(test):
     model.update(observation)
 
 
-#%%
+# %%
 size = test.shape[0]
 train = train[-size:]
 
