@@ -4,6 +4,6 @@ jupyterlab==4.1.0
 pip-check-updates==0.23.1
 pmdarima==2.0.4
 scikit-learn==1.4.0
-Scrapy==2.11.0
+Scrapy==2.11.1
 seaborn==0.13.2
 tqdm==4.66.2
