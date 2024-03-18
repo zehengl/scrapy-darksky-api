@@ -1,2 +1,2 @@
-plotly==5.19.0
-streamlit==1.32.0
+plotly==5.20.0
+streamlit==1.32.2
