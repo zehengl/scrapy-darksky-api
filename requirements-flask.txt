@@ -1,4 +1,4 @@
-Flask==3.0.2
+Flask==3.0.3
 Flask-Bootstrap4==4.0.2
 Flask-WTF==1.2.1
 gunicorn==21.2.0
