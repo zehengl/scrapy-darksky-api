@@ -3,7 +3,7 @@
 jupyterlab==4.4.7
 pip-check-updates==0.27.0
 pmdarima==2.0.4
-scikit-learn==1.7.1
+scikit-learn==1.7.2
 Scrapy==2.13.3
 seaborn==0.13.2
 tqdm==4.67.1
