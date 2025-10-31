@@ -1,7 +1,3 @@
-<div align="center">
-    <img src="https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-59-512.png" alt="logo" height="128">
-</div>
-
 # scrapy-darksky-api
 
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
@@ -73,9 +69,5 @@ See the demo app at [https://yyc-darksky-api.streamlit.app/][2] for some visuali
 
 ## Credits
 
-- [Icon][3] by [The Pictographers][4]
-
 [1]: https://darksky.net/dev
 [2]: https://yyc-darksky-api.streamlit.app/
-[3]: https://www.iconfinder.com/icons/667368/celcius_clouds_farenheit_sunshine_temerature_thermometer_weather_icon
-[4]: https://www.iconfinder.com/bluewolfski
