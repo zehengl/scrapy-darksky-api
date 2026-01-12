@@ -3,5 +3,5 @@ Flask-Bootstrap4==4.0.2
 Flask-WTF==1.2.2
 gunicorn==23.0.0
 pandas==2.3.3
-plotly==6.5.0
+plotly==6.5.1
 whitenoise==6.11.0

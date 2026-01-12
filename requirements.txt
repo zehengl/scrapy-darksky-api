@@ -1,2 +1,2 @@
-plotly==6.5.0
+plotly==6.5.1
 streamlit==1.52.2
