@@ -1,9 +1,9 @@
 -r requirements.txt
 -r requirements-flask.txt
-jupyterlab==4.6.1
+jupyterlab==4.6.2
 pip-check-updates==0.29.0
 pmdarima==2.1.1
 scikit-learn==1.9.0
 Scrapy==2.17.0
 seaborn==0.13.2
-tqdm==4.69.0
+tqdm==4.70.0
