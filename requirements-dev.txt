@@ -1,6 +1,6 @@
 -r requirements.txt
 -r requirements-flask.txt
-jupyterlab==4.6.3
+jupyterlab==4.6.4
 pip-check-updates==0.29.0
 pmdarima==2.1.1
 scikit-learn==1.9.1
